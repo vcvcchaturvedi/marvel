@@ -23,7 +23,9 @@ if (!superheroId) {
     data.comics.items.forEach(async (comic, i) => {
       const comicName = comic.name;
       const resourceURIComic = comic.resourceURI + "?" + appendParams;
-      const responseComic = await fetch(resourceURIComic);
+      const responseComic = await fetch(
+        resourceURIComic.replace("http::", "https::")
+      );
       const responseComicData = (await responseComic.json()).data.results[0];
       const imageComic =
         responseComicData.thumbnail.path +
@@ -85,7 +87,7 @@ if (!superheroId) {
     //Populate Series DOM
     data.series.items.forEach(async (series) => {
       const seriesResponse = await fetch(
-        series.resourceURI + "?" + appendParams
+        series.resourceURI.replace("http::", "https::") + "?" + appendParams
       );
       const seriesData = (await seriesResponse.json()).data.results[0];
       const seriesContainer = document.getElementById("seriesContainer");
