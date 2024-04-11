@@ -1,0 +1,53 @@
+body {
+  background-color: rgba(212, 215, 16, 0.429) !important;
+}
+
+h1 {
+  color: rgba(6, 5, 99, 0.701);
+}
+
+input[type="search"] {
+  color: rgba(6, 5, 99, 0.701);
+  background-color: antiquewhite;
+  font-weight: 800;
+}
+
+.card {
+  height: 300px !important;
+}
+
+.card-text {
+  height: 70px !important;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+.superheroName {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.carousel-item {
+  height: 750px;
+}
+
+.carousel-item img {
+  height: 500px;
+}
+
+.storyElem {
+  height: 600px;
+}
+
+.superHeroContainer {
+  height: 600px;
+  color: white;
+  font-weight: 500;
+  background-color: rgb(39, 16, 3);
+}
+
+.superHeroContainer img {
+  height: 300px;
+}
